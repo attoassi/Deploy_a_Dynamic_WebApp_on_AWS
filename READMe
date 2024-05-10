@@ -111,5 +111,5 @@ sudo service httpd restart
 4. Access the website using the registered domain name.
 
 #Reository Structure
-**Deployment Script*: Contains the script for setting up the web appliAcation on the ec2 instance
-**Architectural Diagram*: Visual representation of the AWS architecture used for this project
+Deployment Script: Contains the script for setting up the web appliAcation on the ec2 instance
+Architectural Diagram: Visual representation of the AWS architecture used for this project

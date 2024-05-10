@@ -109,4 +109,3 @@ sudo service httpd restart
 2. Follow the instructions in the repository's documentation to set up the required AWS resources.
 3. Deploy the website code and assets to the appropriate S3 bucket.
 4. Access the website using the registered domain name.
-

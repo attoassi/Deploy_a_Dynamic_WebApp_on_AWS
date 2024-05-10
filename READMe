@@ -6,22 +6,22 @@ This project guidelines the deployment and hosting of a dynamic web application 
 
 The web application is hosted on EC2 instances within a Virtual Private Cloud (VPC) configured with public and private subnets spanning two Availability Zones. The infrastructure leverages the following AWS resources:
 
-- **Virtual Private Cloud (VPC)**: A logically isolated section of the AWS cloud where AWS resources are launched.
-- **Internet Gateway**: Enables communication between the VPC instances and the internet.
-- **Security Groups**: Act as virtual firewalls to control inbound and outbound traffic.
-- **Availability Zones**: Multiple Availability Zones are used to increase reliability and fault tolerance.
-- **Public Subnets**: Host infrastructure components like the NAT Gateway and Application Load Balancer.
-- **Private Subnets**: Host the web servers (EC2 instances) and data base (RDS instances) for enhanced security.
-- **NAT Gateway**: Allows instances in private subnets to access the internet.
-- **EC2 Instance Connect Endpoint**: Enables secure connections to EC2 instances within both public and private subnets.
-- **Application Load Balancer**: Distributes incoming web traffic across multiple EC2 instances in an Auto Scaling group.
-- **Auto Scaling Group**: Automatically manages the EC2 instances hosting the website, ensuring availability, scalability,  fault tolerance, and elasticity.
-- **RDS instances**: used for deploying the data base
-- **AWS Certificate Manager**: Secures application communications with SSL/TLS certificates.
-- **Simple Notification Service (SNS)**: Sends notifications about activities within the Auto Scaling Group.
-- **CloudWatch**:CloudWatch to monitor key metric (CPU , memory and disk space) and CloudWatch logs for logging 
-- **Route 53**: Provides DNS services for registering and managing the website's domain name.
-- **S3 Bucket**: Stores the application code and assets.
+- Virtual Private Cloud (VPC): A logically isolated section of the AWS cloud where AWS resources are launched.
+- Internet Gateway: Enables communication between the VPC instances and the internet.
+- Security Groups: Act as virtual firewalls to control inbound and outbound traffic.
+- Availability Zones: Multiple Availability Zones are used to increase reliability and fault tolerance.
+- Public Subnets: Host infrastructure components like the NAT Gateway and Application Load Balancer.
+- Private Subnets: Host the web servers (EC2 instances) and data base (RDS instances) for enhanced security.
+- NAT Gateway: Allows instances in private subnets to access the internet.
+- EC2 Instance Connect Endpoint: Enables secure connections to EC2 instances within both public and private subnets.
+- Application Load Balancer: Distributes incoming web traffic across multiple EC2 instances in an Auto Scaling group.
+- Auto Scaling Group: Automatically manages the EC2 instances hosting the website, ensuring availability, scalability,  fault tolerance, and elasticity.
+- RDS instances: used for deploying the data base
+- AWS Certificate Manager: Secures application communications with SSL/TLS certificates.
+- Simple Notification Service (SNS): Sends notifications about activities within the Auto Scaling Group.
+- CloudWatch:CloudWatch alarm to monitor key metric (CPU , memory and disk space) and CloudWatch logs for logging 
+- Route 53: Provides DNS services for registering and managing the website's domain name.
+- S3 Bucket: Stores the application code and assets.
 
 ## Deployment script
 

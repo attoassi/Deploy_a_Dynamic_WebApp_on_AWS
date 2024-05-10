@@ -2,7 +2,7 @@
 
 This project guidelines the deployment and hosting of a dynamic web application on AWS, utilizing various services and components to ensure high availability, scalability, security, and fault tolerance.
 
-## Architecture Overview
+# Architecture Overview
 
 The web application is hosted on EC2 instances within a Virtual Private Cloud (VPC) configured with public and private subnets spanning two Availability Zones. The infrastructure leverages the following AWS resources:
 
@@ -23,7 +23,7 @@ The web application is hosted on EC2 instances within a Virtual Private Cloud (V
 - **Route 53**: Provides DNS services for registering and managing the website's domain name.
 - **S3 Bucket**: Stores the application code and assets.
 
-## Deployment script
+# Deployment script
 
 #!/bin/bash
 
